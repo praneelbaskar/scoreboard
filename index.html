@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scoreboard">
+
+        <header>
+            <h1>🏏 CRICKET SCOREBOARD</h1>
+            <p>LIVE MATCH</p>
+        </header>
+
+        <section class="teams">
+            <div class="team">
+                <h2>INDIA</h2>
+                <div class="score" id="score">156/4</div>
+                <div class="overs">Overs: <span id="overs">18.2</span></div>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="team">
+                <h2>AUSTRALIA</h2>
+                <div class="target">Target: 185</div>
+            </div>
+        </section>
+
+        <section class="match-info">
+            <p>🏟️ International Cricket Stadium</p>
+            <p>India need 29 runs from 10 balls</p>
+        </section>
+
+        <section class="players">
+
+            <div class="card">
+                <h3>🏏 Batsmen</h3>
+
+                <div class="player">
+                    <span>Virat Kohli *</span>
+                    <strong id="batsman1">72 (45)</strong>
+                </div>
+
+                <div class="player">
+                    <span>KL Rahul</span>
+                    <strong id="batsman2">31 (22)</strong>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Bowler</h3>
+
+                <div class="player">
+                    <span>Pat Cummins</span>
+                    <strong>3.2 - 0 - 28 - 2</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="recent">
+            <h3>Recent Balls</h3>
+
+            <div class="balls" id="balls">
+                <span>1</span>
+                <span>4</span>
+                <span>W</span>
+                <span>2</span>
+                <span>6</span>
+                <span>0</span>
+            </div>
+        </section>
+
+        <section class="controls">
+            <h3>Update Score</h3>
+
+            <button onclick="addRun(1)">+1 Run</button>
+            <button onclick="addRun(2)">+2 Runs</button>
+            <button onclick="addRun(4)">+4 Runs</button>
+            <button onclick="addRun(6)">+6 Runs</button>
+            <button class="wicket" onclick="addWicket()">Wicket</button>
+        </section>
+
+        <footer>
+            <p>© 2026 Cricket Scoreboard</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```

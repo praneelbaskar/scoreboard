@@ -1,0 +1,236 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #071e26, #0b4f3c);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.scoreboard {
+    width: 100%;
+    max-width: 850px;
+    background: #102b32;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+header {
+    background: linear-gradient(90deg, #0c8f50, #16b86a);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d9ffe9;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 35px 20px;
+    background: #0d2329;
+}
+
+.team {
+    text-align: center;
+    min-width: 180px;
+}
+
+.team h2 {
+    color: #4df58e;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.overs {
+    color: #a9c1c6;
+    margin-top: 5px;
+}
+
+.vs {
+    background: #f0b429;
+    color: #17232a;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.target {
+    font-size: 22px;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+.match-info {
+    text-align: center;
+    padding: 18px;
+    background: #173b42;
+    color: #d4e4e7;
+}
+
+.match-info p {
+    margin: 5px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+}
+
+.card {
+    background: #17343b;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.card h3,
+.recent h3,
+.controls h3 {
+    color: #4df58e;
+    margin-bottom: 18px;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid #315158;
+}
+
+.player:last-child {
+    border-bottom: none;
+}
+
+.player strong {
+    color: white;
+}
+
+.recent {
+    padding: 0 25px 25px;
+}
+
+.balls {
+    display: flex;
+    gap: 10px;
+}
+
+.balls span {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #244b53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.balls span:nth-child(2),
+.balls span:nth-child(5) {
+    background: #16a85e;
+}
+
+.balls span:nth-child(3) {
+    background: #e34b4b;
+}
+
+.controls {
+    padding: 25px;
+    background: #0d2329;
+    text-align: center;
+}
+
+.controls button {
+    border: none;
+    background: #16a85e;
+    color: white;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.controls button:hover {
+    background: #20c976;
+    transform: translateY(-2px);
+}
+
+.controls .wicket {
+    background: #e34242;
+}
+
+.controls .wicket:hover {
+    background: #ff5555;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #8ca7ac;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .teams {
+        gap: 15px;
+    }
+
+    .team {
+        min-width: 130px;
+    }
+
+    .score {
+        font-size: 36px;
+    }
+
+    .team h2 {
+        font-size: 20px;
+    }
+
+    .players {
+        grid-template-columns: 1fr;
+    }
+
+    .balls span {
+        width: 35px;
+        height: 35px;
+    }
+}
